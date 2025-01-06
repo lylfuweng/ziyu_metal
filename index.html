@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梓钰再生资源回收有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="https://img.freepik.com/free-vector/elegant-circle-logo-icon_126523-971.jpg?w=200&h=200&q=90" alt="梓钰集团">
+                </div>
+                <div class="company-name">
+                    <h1 class="main-title">梓钰集团</h1>
+                    <div class="subtitle">ZIYU GROUP</div>
+                    <div class="company-slogan">再生资源回收领导者</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#services">服务项目</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主横幅 -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://images.pexels.com/photos/2569842/pexels-photo-2569842.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="贵金属回收">
+                <div class="slide-content">
+                    <h1>专业的贵金属回收服务商</h1>
+                    <p>黄金 | 白银 | 铂金 | 钯金 专业回收</p>
+                    <button class="cta-button">立即咨询</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="工业金属回收">
+                <div class="slide-content">
+                    <h1>工业金属回收解决方案</h1>
+                    <p>铜 | 铝 | 不锈钢 | 稀有金属 一站式服务</p>
+                    <button class="cta-button">了解更多</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="电子废料回收">
+                <div class="slide-content">
+                    <h1>电子废料回收专家</h1>
+                    <p>线路板 | 芯片 | 电子元件 高价回收</p>
+                    <button class="cta-button">联系我们</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/3912982/pexels-photo-3912982.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="专业检测">
+                <div class="slide-content">
+                    <h1>专业检测 · 优质服务</h1>
+                    <p>先进检测设备 | 专业技术团队 | 透明定价</p>
+                    <button class="cta-button">获取报价</button>
+                </div>
+            </div>
+            <button class="prev-slide">&lt;</button>
+            <button class="next-slide">&gt;</button>
+            <div class="slide-dots"></div>
+        </div>
+    </header>
+
+    <!-- 服务特点 -->
+    <section class="features">
+        <div class="container">
+            <h2>我们的服务特点</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="icon-test"></i>
+                    <h3>专业检测</h3>
+                    <p>配备先进的金属检测设备</p>
+                </div>
+                <!-- 其他特点项... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>回收服务项目</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/4483608/pexels-photo-4483608.jpeg?auto=compress&cs=tinysrgb&w=600" alt="贵金属回收">
+                    <h3>贵金属回收</h3>
+                    <ul>
+                        <li>黄金</li>
+                        <li>白银</li>
+                        <li>铂</li>
+                        <li>钯</li>
+                        <li>铑</li>
+                    </ul>
+                    <button class="price-check" data-type="precious">查询实时价格</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=600" alt="有色金属回收">
+                    <h3>有色金属回收</h3>
+                    <ul>
+                        <li>镍</li>
+                        <li>钴</li>
+                        <li>铜</li>
+                        <li>铝</li>
+                    </ul>
+                    <button class="price-check" data-type="non-ferrous">查询实时价格</button>
+                </div>
+                
+                <!-- 添加价格查询弹窗 -->
+                <div id="priceModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>实时金属价格</h2>
+                        <div id="priceList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>关于我们</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>二十年专业经验</h3>
+                    <p>梓钰再生资源回收有限公司成立于2003年，是一家专业从事贵金属及有色金属回收的企业。我们拥有完整的经营资质，专业的技术团队，始终致力于为客户提供最优质的服务。</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">2003</div>
+                        <div class="event">公司成立</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2008</div>
+                        <div class="event">获得ISO9001认证</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2015</div>
+                        <div class="event">建立现代化检测中心</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2023</div>
+                        <div class="event">服务范围扩展至全国</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="icon-location"></i>
+                        <h3>公司地址</h3>
+                        <p>XX省XX市XX区XX路XX号</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="icon-phone"></i>
+                        <h3>联系电话</h3>
+                        <p>400-XXX-XXXX</p>
+                        <p>152-3011-9731</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="icon-email"></i>
+                        <h3>电子邮箱</h3>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">电话</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">回收类型</label>
+                            <select id="type" name="type" required>
+                                <option value="">请选择回收类型</option>
+                                <option value="precious">贵金属</option>
+                                <option value="non-ferrous">有色金属</option>
+                                <option value="electronic">电子废料</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">详细说明</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">提交咨询</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 添加页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <div class="footer-logo">
+                        <img src="https://img.freepik.com/free-vector/elegant-circle-logo-icon_126523-971.jpg?w=200&h=200&q=90" alt="梓钰集团">
+                    </div>
+                    <div class="footer-company-info">
+                        <h3 class="footer-company-name">梓钰再生资源集团有限公司</h3>
+                        <div class="footer-company-en">ZIYU RECYCLING GROUP CO., LTD.</div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#services">服务项目</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 梓钰再生资源回收有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 在body结束标签前添加script引用 -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
